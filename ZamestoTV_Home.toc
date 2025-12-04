@@ -1,0 +1,14 @@
+## Interface: 110207
+## Title: Decor Treasure Hunt
+## Title-ruRU: Охота за предметами декора
+## Notes: Neighborhood Decor Treasure Hunt Quests
+## Notes-ruRU: Легко отыщет декор
+## Author: ZamestoTV
+## IconTexture: Interface\AddOns\ZamestoTV_Home\goblin
+## Version: 1.0.8
+## SavedVariables: TreasureAssistantDB
+
+## Category-enUS: Addons ZamestoTV
+## Category-ruRU: Аддоны ZamestoTV
+
+Home.lua
