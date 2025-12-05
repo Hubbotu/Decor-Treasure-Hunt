@@ -173,7 +173,7 @@ frame:Hide()
 
 local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 title:SetPoint("TOPLEFT", 12, -10)
-title:SetText("Treasure Assistant")
+title:SetText("Treasure Assistant Version: 1.1.2")
 
 local progText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 progText:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -8)
@@ -184,7 +184,7 @@ local progValue = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 progValue:SetPoint("LEFT", progText, "RIGHT", 8, 0)
 
 local activeLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-activeLabel:SetPoint("TOPLEFT", progText, "BOTTOMLEFT", 0, -12)
+activeLabel:SetPoint("TOPLEFT", progText, "BOTTOMLEFT", 0, -3)
 activeLabel:SetWidth(310)
 activeLabel:SetJustifyH("CENTER")
 activeLabel:SetTextColor(1, 0.9, 0.5)
