@@ -20,7 +20,7 @@ local QUEST_DATA = {
     [92966] = {name="Stormwind Interior Narrow Wall", uiMapID=2352, x=0.669, y=0.570},
     [92967] = {name="Stormwind Interior Doorway",      uiMapID=2352, x=0.583, y=0.650},
     [92968] = {name="Stormwind Interior Wall",         uiMapID=2352, x=0.528, y=0.668},
-    [92969] = {name="Sturdy Wooden Bench",             uiMapID=2352, x=0.542, y=0.736},
+    [92969] = {name="Sturdy Wooden Bench",             uiMapID=2352, x=0.555, y=0.715},
     [92979] = {name="Wicker Basket",                   uiMapID=2352, x=0.616, y=0.794},
     [92978] = {name="Reinforced Wooden Chest",         uiMapID=2352, x=0.542, y=0.736},
     [92977] = {name="Iron-Reinforced Cupboard",        uiMapID=2352, x=0.645, y=0.856},
@@ -40,7 +40,7 @@ local QUEST_DATA = {
     [92983] = {name="Covered Wooden Table",            uiMapID=2352, x=0.425, y=0.447},
     [92982] = {name="Sturdy Fireplace",                uiMapID=2352, x=0.610, y=0.820},
     [92981] = {name="Wide Charming Couch",             uiMapID=2352, x=0.298, y=0.484},
-    [92980] = {name="Iron-Reinforced Standing Mirror", uiMapID=2352, x=0.285, y=0.448},
+    [92980] = {name="Iron-Reinforced Standing Mirror", uiMapID=2352, x=0.2863, y=0.4671},
     [92999] = {name="Carved Wooden Bar Table",         uiMapID=2352, x=0.283, y=0.401},
     [92998] = {name="Large Covered Wooden Table",      uiMapID=2352, x=0.262, y=0.379},
     [92997] = {name="Large Sturdy Wooden Table",       uiMapID=2352, x=0.210, y=0.300},
@@ -184,7 +184,7 @@ local progValue = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 progValue:SetPoint("LEFT", progText, "RIGHT", 8, 0)
 
 local activeLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-activeLabel:SetPoint("TOPLEFT", progText, "BOTTOMLEFT", 0, -3)
+activeLabel:SetPoint("TOPLEFT", progText, "BOTTOMLEFT", 0, -5)
 activeLabel:SetWidth(310)
 activeLabel:SetJustifyH("CENTER")
 activeLabel:SetTextColor(1, 0.9, 0.5)
