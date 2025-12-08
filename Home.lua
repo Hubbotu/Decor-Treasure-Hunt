@@ -69,14 +69,14 @@ local QUEST_DATA = {
     [93077] = {name="Rugged Stool",                    uiMapID=2351, x=0.580, y=0.489},
     [93078] = {name="Iron Chain Chandelier",           uiMapID=2351, x=0.561, y=0.370},
     [93079] = {name="Iron-Reinforced Door",            uiMapID=2351, x=0.6230, y=0.4890},
-    [93080] = {name="Iron-Studded Wooden Window",      uiMapID=2351, x=0.653, y=0.580},
+    [93080] = {name="Iron-Studded Wooden Window",      uiMapID=2351, x=0.626, y=0.516},
     [93081] = {name="Orgrimmar Chair",                 uiMapID=2351, x=0.7027, y=0.4983},
     [93082] = {name="Rugged Brazier",                  uiMapID=2351, x=0.708, y=0.527},
     [93083] = {name="Orgrimmar Nightstand",            uiMapID=2351, x=0.721, y=0.418},
     [93084] = {name="Durable Wooden Chest",            uiMapID=2351, x=0.607, y=0.645},
     [93085] = {name="Orgrimmar Beam Platform",         uiMapID=2351, x=0.586, y=0.560},
     [93087] = {name="Orgrimmar Round Platform",        uiMapID=2351, x=0.555, y=0.524},
-    [93088] = {name="Orgrimmar Large Platform",        uiMapID=2351, x=0.643, y=0.537},
+    [93088] = {name="Orgrimmar Large Platform",        uiMapID=2351, x=0.637, y=0.562},
     [93091] = {name="High-Backed Orgrimmar Chair",     uiMapID=2351, x=0.646, y=0.580},
     [93097] = {name="Short Orgrimmar Bench",           uiMapID=2351, x=0.584, y=0.651},
     [93098] = {name="Iron-Reinforced Crate",           uiMapID=2351, x=0.700, y=0.708},
@@ -173,7 +173,7 @@ frame:Hide()
 
 local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 title:SetPoint("TOPLEFT", 12, -10)
-title:SetText("Treasure Assistant Version: 1.1.2")
+title:SetText("Treasure Assistant Version: 1.2.0")
 
 local progText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 progText:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -8)
