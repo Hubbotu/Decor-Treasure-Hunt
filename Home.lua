@@ -74,7 +74,7 @@ local QUEST_DATA = {
     [93082] = {name="Rugged Brazier",                  uiMapID=2351, x=0.708, y=0.527},
     [93083] = {name="Orgrimmar Nightstand",            uiMapID=2351, x=0.721, y=0.418},
     [93084] = {name="Durable Wooden Chest",            uiMapID=2351, x=0.607, y=0.645},
-    [93085] = {name="Orgrimmar Beam Platform",         uiMapID=2351, x=0.586, y=0.560},
+    [93085] = {name="Orgrimmar Beam Platform",         uiMapID=2351, x=0.3865, y=0.8026},
     [93087] = {name="Orgrimmar Round Platform",        uiMapID=2351, x=0.555, y=0.524},
     [93088] = {name="Orgrimmar Large Platform",        uiMapID=2351, x=0.637, y=0.562},
     [93091] = {name="High-Backed Orgrimmar Chair",     uiMapID=2351, x=0.646, y=0.580},
@@ -173,7 +173,7 @@ frame:Hide()
 
 local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 title:SetPoint("TOPLEFT", 12, -10)
-title:SetText("Treasure Assistant Version: 1.2.0")
+title:SetText("Treasure Assistant Version: 1.2.2")
 
 local progText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 progText:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -8)
