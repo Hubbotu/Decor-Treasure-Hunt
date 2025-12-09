@@ -78,7 +78,7 @@ local QUEST_DATA = {
     [93087] = {name="Orgrimmar Round Platform",        uiMapID=2351, x=0.555, y=0.524},
     [93088] = {name="Orgrimmar Large Platform",        uiMapID=2351, x=0.637, y=0.562},
     [93091] = {name="High-Backed Orgrimmar Chair",     uiMapID=2351, x=0.646, y=0.580},
-    [93097] = {name="Short Orgrimmar Bench",           uiMapID=2351, x=0.584, y=0.651},
+    [93097] = {name="Short Orgrimmar Bench",           uiMapID=2351, x=0.5776, y=0.6344},
     [93098] = {name="Iron-Reinforced Crate",           uiMapID=2351, x=0.700, y=0.708},
     [93099] = {name="Large Orgrimmar Bookcase",        uiMapID=2351, x=0.681, y=0.757},
     [93100] = {name="Short Orgrimmar Bookcase",        uiMapID=2351, x=0.648, y=0.730},
