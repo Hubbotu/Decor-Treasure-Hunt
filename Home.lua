@@ -173,7 +173,7 @@ frame:Hide()
 
 local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 title:SetPoint("TOPLEFT", 12, -10)
-title:SetText("Treasure Assistant Version: 1.2.2")
+title:SetText("Treasure Assistant Version: 1.3.0")
 
 local progText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 progText:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -8)

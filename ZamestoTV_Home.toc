@@ -5,7 +5,7 @@
 ## Notes-ruRU: Легко отыщет декор
 ## Author: ZamestoTV
 ## IconTexture: Interface\AddOns\ZamestoTV_Home\goblin
-## Version: 1.2.2
+## Version: 1.3.0
 ## SavedVariables: TreasureAssistantDB
 
 ## Category-enUS: Addons ZamestoTV
