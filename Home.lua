@@ -126,13 +126,20 @@ local function GetActiveTreasureQuest()
 end
 
 local function GetProgress()
-    local completed = 0
-    for questID in pairs(QUEST_DATA) do
+    local allianceCompleted = 0
+    local hordeCompleted = 0
+
+    for questID, data in pairs(QUEST_DATA) do
         if C_QuestLog.IsQuestFlaggedCompleted(questID) then
-            completed = completed + 1
+            if data.uiMapID == 2352 then
+                allianceCompleted = allianceCompleted + 1
+            elseif data.uiMapID == 2351 then
+                hordeCompleted = hordeCompleted + 1
+            end
         end
     end
-    return completed, select(2, next(QUEST_DATA)) and 100 or 0
+
+    return allianceCompleted, hordeCompleted
 end
 
 local function SetWaypointAndAnnounce(quest)
@@ -173,15 +180,32 @@ frame:Hide()
 
 local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 title:SetPoint("TOPLEFT", 12, -10)
-title:SetText("Treasure Assistant Version: 1.3.6")
+title:SetText("Treasure Assistant Version: 1.4.0")
 
 local progText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 progText:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -8)
 progText:SetText("Progress:")
 progText:SetTextColor(0.8, 0.8, 0.8)
 
-local progValue = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-progValue:SetPoint("LEFT", progText, "RIGHT", 8, 0)
+-- Alliance icon and text
+local allianceIcon = frame:CreateTexture(nil, "OVERLAY")
+allianceIcon:SetSize(20, 20)
+allianceIcon:SetPoint("LEFT", progText, "RIGHT", 8, 0)
+allianceIcon:SetTexture("Interface\\GroupFrame\\UI-Group-PVP-Alliance")
+
+local allianceValue = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+allianceValue:SetPoint("LEFT", allianceIcon, "RIGHT", 4, 0)
+allianceValue:SetText("0 / 50")
+
+-- Horde icon and text (positioned 7 pixels after alliance text)
+local hordeIcon = frame:CreateTexture(nil, "OVERLAY")
+hordeIcon:SetSize(20, 20)
+hordeIcon:SetPoint("LEFT", allianceValue, "RIGHT", 7, 0)
+hordeIcon:SetTexture("Interface\\GroupFrame\\UI-Group-PVP-Horde")
+
+local hordeValue = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+hordeValue:SetPoint("LEFT", hordeIcon, "RIGHT", 4, 0)
+hordeValue:SetText("0 / 50")
 
 local activeLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 activeLabel:SetPoint("TOPLEFT", progText, "BOTTOMLEFT", 0, -5)
@@ -227,9 +251,10 @@ end
 -- ========== UPDATE FUNCTION ==========
 local function UpdateFrame()
     local activeQuest = GetActiveTreasureQuest()
-    local completed, total = GetProgress()
+    local allianceCompleted, hordeCompleted = GetProgress()
 
-    progValue:SetText(("%d / %d"):format(completed, 50))
+    allianceValue:SetText(("%d / 50"):format(allianceCompleted))
+    hordeValue:SetText(("%d / 50"):format(hordeCompleted))
 
     if activeQuest and not TreasureAssistantDB.hidden then
         activeLabel:SetText(activeQuest.name)
