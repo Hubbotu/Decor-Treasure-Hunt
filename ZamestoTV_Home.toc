@@ -1,4 +1,4 @@
-## Interface: 110207
+## Interface: 120007, 120100
 ## Title: Decor Treasure Hunt
 ## Title-ruRU: Охота за предметами декора
 ## Notes: Neighborhood Decor Treasure Hunt Quests
